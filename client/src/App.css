@@ -1,0 +1,242 @@
+/* 🌈 General page background and layout */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(to bottom right, #eff6ff, #e0e7ff);
+  min-height: 100vh;
+  color: #1f2937;
+}
+
+/* 🧱 Generic utility-like styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* 🔤 Headings and text */
+h1, h2 {
+  color: #1e293b;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+p {
+  color: #4b5563;
+}
+
+/* 🧍 Auth form styles */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.auth-box {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-title {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.auth-subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.25rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px #c7d2fe;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* 💾 Primary buttons */
+.btn-primary {
+  width: 100%;
+  background-color: #4f46e5;
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem;
+}
+
+.btn-primary:hover {
+  background-color: #4338ca;
+}
+
+/* 🧭 Auth toggle link */
+.auth-toggle {
+  text-align: center;
+  color: #4f46e5;
+  font-size: 0.875rem;
+  background: none;
+  border: none;
+  margin-top: 1rem;
+}
+
+.auth-toggle:hover {
+  color: #312e81;
+}
+
+/* ✅ Message boxes */
+.message {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.message.success {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.message.error {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+/* 📦 Dashboard layout */
+.dashboard {
+  background: linear-gradient(to bottom right, #eff6ff, #e0e7ff);
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.logout-btn {
+  background-color: #ef4444;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+.logout-btn:hover {
+  background-color: #dc2626;
+}
+
+/* 📤 Upload area */
+.upload-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+  border: 2px dashed #d1d5db;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.upload-area:hover {
+  background-color: #f9fafb;
+}
+
+/* 📁 File list */
+.file-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.file-info p {
+  margin: 0.25rem 0;
+}
+
+.file-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.file-buttons button {
+  color: white;
+  font-size: 0.875rem;
+  padding: 0.4rem 0.75rem;
+}
+
+.btn-green {
+  background-color: #22c55e;
+}
+
+.btn-green:hover {
+  background-color: #16a34a;
+}
+
+.btn-yellow {
+  background-color: #eab308;
+}
+
+.btn-yellow:hover {
+  background-color: #ca8a04;
+}
+
+.btn-red {
+  background-color: #ef4444;
+}
+
+.btn-red:hover {
+  background-color: #dc2626;
+}
